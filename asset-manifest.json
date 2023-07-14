@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/infinite/static/css/main.f27ce391.css",
+    "main.js": "/infinite/static/js/main.f26ba02e.js",
+    "index.html": "/infinite/index.html",
+    "main.f27ce391.css.map": "/infinite/static/css/main.f27ce391.css.map",
+    "main.f26ba02e.js.map": "/infinite/static/js/main.f26ba02e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f27ce391.css",
+    "static/js/main.f26ba02e.js"
+  ]
+}
