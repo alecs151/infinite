@@ -1,38 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #fcfcfc;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  margin: auto;
+}
+.image {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+.container {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 15px;
+  box-shadow: 0 10px 40px -10px rgba(7, 49, 92, 0.1);
+  border: 1px solid #fdfdfd;
+  background: #bfd8d8;
+}
+h4 {
+  font-weight: 400;
+}
+.flex {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+input {
+  padding: 10px;
+  box-shadow: 0 10px 40px -10px rgb(0 64 128 / 10%);
+  border: 1px solid #ddd;
+  background: #f9fafc;
+  width: 95%;
+  margin: 15px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.desc {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* width: 30%; */
+  align-items: center;
+}
+a {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-self: center;
+  margin-top: 1%;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: #d6968a;
+  color: rgb(8, 38, 49);
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  padding: 10px;
+  background: rgb(226, 127, 127);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:active {
+  transform: translateY(5px);
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    max-width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+  input {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .App {
+    max-width: 95%;
+  }
+  input {
+    width: 95%;
   }
 }
